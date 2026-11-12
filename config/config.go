@@ -38,12 +38,12 @@ func Load() Config {
 
 	return Config{
 		AiDEX: AiDEXConfig{
-			APIURL:    getEnv("AIDEX_API_URL", "https://gateway.pancares.com/backend/aidex-x/cgmRecord/getCgmRecordsByPageInfo"),
+			APIURL:    getEnv("AIDEX_API_URL", "https://china.pancares.com/backend/aidex-x/cgmRecord/getCgmRecordsByPageInfo"),
 			UserID:    getEnv("AIDEX_USER_ID", ""),
 			Token:     getEnv("AIDEX_TOKEN", ""),
-			Brand:     getEnv("AIDEX_BRAND", "linX"),
-			AppInfo:   getEnv("AIDEX_APP_INFO", "com.microtechmd.AiDEX-X.eu.mmol"),
-			UserAgent: getEnv("AIDEX_USER_AGENT", "EU_mmol/2.4.1 (com.microtechmd.AiDEX-X.eu.mmol; build:26032001; iOS 26.4.0) Alamofire/5.6.4"),
+			Brand:     getEnv("AIDEX_BRAND", "AiDEX-X"),
+			AppInfo:   getEnv("AIDEX_APP_INFO", "com.microtechmd.AiDEX-X"),
+			UserAgent: getEnv("AIDEX_USER_AGENT", "EU_mmol/2.4.1 (com.microtechmd.AiDEX-X; build:26032001; iOS 26.4.0) Alamofire/5.6.4"),
 		},
 		Nightscout: NightscoutConfig{
 			URL:       getEnv("NIGHTSCOUT_URL", "http://localhost:1337"),
